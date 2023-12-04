@@ -54,15 +54,14 @@ const slideShow = () => {
 };
 
 
-
 //slider
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   grabCursor: true,
   loop: true,
-  autoplay:{
-    delay:1500
-  },
+  // autoplay:{
+  //   delay:1500
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -72,7 +71,6 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
 
 //zindex
 
