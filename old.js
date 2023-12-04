@@ -77,10 +77,6 @@ var swiper = new Swiper(".mySwiper", {
 //zindex
 
 // const about = document.querySelector(".about");
-var topIndex=100;
-function movetotop(top){
-  top.style.zIndex=++topIndex;
-}
 
 
 // 
