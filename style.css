@@ -1523,15 +1523,17 @@ footer hr {
 
 
 
-.coursebox-resp{
-  
-}
-
-@media (max-width:768px){
+/* @media (max-width:768px){
   #people{
     display: none;
   }
   .data{
     display: none;
   }
-}
+  #courses-container{
+    display: none;
+  }
+ .coursehead{
+  display: none;
+ }
+} */
