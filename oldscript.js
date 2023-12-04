@@ -86,7 +86,6 @@ function movetotop(top){
 // 
 
 
-
 // COUNTERRRRRRRRRRRRRRRR
 
 const workSection = document.querySelector(".section-work-data");
