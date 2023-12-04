@@ -826,6 +826,7 @@ a{
 
 .card {
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
 }
 
@@ -842,7 +843,7 @@ a{
   position: absolute;
   font-size: 25px;
   /* max-width: 25em; */
-  display: flex;
+  display: inline-block;
   justify-content: end;
   align-items: center;
   margin: 5%;
@@ -1020,7 +1021,7 @@ a{
 
 .section-counter {
   padding: 5rem 3rem;
-  background:#22313f;
+  background: #fcab8b;
   /* background: #455b6b; */
 }
 
@@ -1045,6 +1046,10 @@ a{
   color: white;
 
 }
+
+
+
+/* ANIMATION COUNTER ENDDDDDDDDDDDDDDD */
 
 
 /* animation counter */
@@ -1072,6 +1077,10 @@ a{
   gap: 5%;
   transition: all ease 0.9s;
 }
+
+
+
+/*  */
 
 /* PEOPLE */
 
@@ -1184,6 +1193,7 @@ a{
 }
 
 /* swiper button css */
+
 
 
 /*  */
@@ -1508,3 +1518,20 @@ footer hr {
 
 
 /* END FOOTER */
+
+/*  */
+
+
+
+.coursebox-resp{
+  
+}
+
+@media (max-width:768px){
+  #people{
+    display: none;
+  }
+  .data{
+    display: none;
+  }
+}
