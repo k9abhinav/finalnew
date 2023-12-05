@@ -955,7 +955,6 @@ a{
 
 
 #people {
-  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1001,7 +1000,10 @@ a{
   justify-content: center;
   flex-direction: column;
   row-gap: 30px;
+  padding: 36px ;
   height: 100%;
+  /* height: max-content; */
+  border: 2px solid red;
   width: 100%;
 }
 
@@ -1296,7 +1298,7 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* box-sizing: unset; */
+  box-sizing: unset;
   /* background-color: #f6f6f2; */
   color: black;
 }
@@ -1304,7 +1306,7 @@ a{
   width: 25%;
   margin: auto;
   background-color:#22313f;
-  /* height: 0.16rem; */
+  height: 0.16rem;
   font-size: 24px;
 }
 #people h1 {
@@ -1318,7 +1320,7 @@ a{
 .testimonial {
   position: relative;
   /* max-width: 1000px; */
-  width: 100%;
+  width: 100vw;
   padding: 50px 0;
   overflow: hidden;
 }
@@ -1376,6 +1378,7 @@ a{
   transform: translateY(30px);
   background-color: rgba(0, 0, 0, 0.1);
   transition: 0.2s;
+  padding: 12px;
 }
 
 .nav-btn:hover {
@@ -1583,9 +1586,9 @@ footer hr {
 
 
  @media (max-width:768px){
- #people{
+ /* #people{
     display: none;
-  } 
+  }  */
   /* .data{
     display: none;
   } */
