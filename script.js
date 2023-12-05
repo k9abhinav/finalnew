@@ -1,4 +1,5 @@
 const home = document.getElementById('home');
+const navUl=document.querySelector('.nav-ul')
 function isMobileView() {
     return window.innerWidth <= 900; // Adjust the breakpoint as needed
   }
@@ -56,11 +57,13 @@ document.querySelectorAll('.nav-ul').forEach((element)=> {
 });
   
 document.getElementById('ham').addEventListener('click', function() {
-    document.querySelector('.nav-ul').style.transform = 'translateX(-0%)';
+    // document.querySelector('.nav-ul').style.transform = 'translateY(-0%)';
+    navUl.style.display='block'
 });
 
 document.getElementById('cross').addEventListener('click', function() {
-    document.querySelector('.nav-ul').style.transform = 'translateX(100%)';
+    navUl.style.display='none'
+    // document.querySelector('.nav-ul').style.transform = 'translateY(100%)';
     document.querySelectorAll('.hidden-section').forEach(section => {
         section.style.display='none'
     })

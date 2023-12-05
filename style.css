@@ -14,7 +14,7 @@ html,
 body {
   /* height: 100%; */
   background-color: #fff;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: fit-content;
 }
 a{
@@ -164,15 +164,17 @@ a{
   }
   .nav ul {
     position: absolute;
-    right: -100em;
-    right:  0;
-    top:0;
+    transition: all 5s ease-in-out;
+    right: 0;
+    /* top: -100em; */
+    /* top:  0; */
+    /* bottom: 100em; */
+    overflow: hidden;
     background-color: #333;
     z-index: 110;
     width: 10em;
     height: max-content;
     display: block;
-    transition: all 1s ease-in-out;
   }
   .navbar ul li a {
     padding: 0 12px;
@@ -535,6 +537,7 @@ a{
   width: 50%;
   /* border: 2px solid red;; */
   /* margin: 0; */
+  overflow-x: hidden;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -547,7 +550,7 @@ a{
 }
 
 .container-right span {
-  margin-left: 47px;
+  /* margin-left: 47px; */
   min-width: 100%;
 }
 .container-right span:hover{
@@ -715,7 +718,66 @@ a{
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
   gap: 5px;
 }
+.resp-course {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
 
+.course-resp-box {
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-resp-box:hover {
+  transform: scale(1.05);
+}
+
+.img-resp {
+  height: 150px;
+  background-color: #ddd; /* Placeholder color */
+}
+
+.brief-resp {
+  padding: 15px;
+}
+
+/* h4 {
+  margin-top: 0;
+} */
+
+.read-resp {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.course-resp-box{
+  display: none ;
+}
+@media(max-width: 768px){
+  #courses-container{
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .course-resp-box {
+    display: block;
+      width: 100%;
+  }
+}
 .course-box-box {
   /* border: 1px solid #182b3a; */
   transition: all 0.6s ease-in-out;
@@ -826,6 +888,7 @@ a{
 
 .card {
   position: sticky;
+  margin-top: -7px;
   position: -webkit-sticky;
   top: 0;
 }
@@ -859,11 +922,12 @@ a{
   display: none;
 }
 
-.facilities {
+#facilities {
   background-color:#fcab8b;
 }
 
-.facilities h2 {
+#facilities h2 {
+  padding:  22px;
   background-color: #fff;
   line-height: 54px;
   font-size: 2rem;
@@ -1020,7 +1084,7 @@ a{
 }
 
 .section-counter {
-  padding: 5rem 3rem;
+  padding: 12px;
   background: #fcab8b;
   /* background: #455b6b; */
 }
@@ -1205,19 +1269,19 @@ a{
   display: flex;
   flex-wrap: wrap;
   background-color: #22313f;
-  padding: 2em;
-  width: 100%;
+  padding: 10px;
+  /* width: 100%; */
   margin: 12px 0;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: white;
 }
 
 .data-box {
-  padding: 2rem 1.5rem;
+  padding: 12px;
   display: flex;
-  width: 25%;
-  /* justify-content: center; */
+  width: 50%;
+  justify-content: center;
   align-items: center;
   gap: 5%;
   transition: all ease 0.9s;
@@ -1232,7 +1296,7 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing: unset;
+  /* box-sizing: unset; */
   /* background-color: #f6f6f2; */
   color: black;
 }
@@ -1240,7 +1304,7 @@ a{
   width: 25%;
   margin: auto;
   background-color:#22313f;
-  height: 0.16rem;
+  /* height: 0.16rem; */
   font-size: 24px;
 }
 #people h1 {
@@ -1253,7 +1317,7 @@ a{
 }
 .testimonial {
   position: relative;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   width: 100%;
   padding: 50px 0;
   overflow: hidden;
@@ -1338,17 +1402,12 @@ a{
 
 /*//////////////////////////////////////////////////////////////*/
 /* MEDIA QUERIES */
-@media (max-width:425px) {
-  #academy {
-    flex-direction: column;
-  }
-}
 
-@media(max-width:425px) {
+/* @media(max-width:425px) {
   .data {
     flex-direction: column;
   }
-}
+} */
 
 @media (max-width: 95em) {
   .container-counter {
@@ -1523,17 +1582,12 @@ footer hr {
 
 
 
-/* @media (max-width:768px){
-  #people{
+ @media (max-width:768px){
+ #people{
     display: none;
-  }
-  .data{
+  } 
+  /* .data{
     display: none;
-  }
-  #courses-container{
-    display: none;
-  }
- .coursehead{
-  display: none;
- }
-} */
+  } */
+ 
+}  
